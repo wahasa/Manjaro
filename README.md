@@ -24,7 +24,7 @@ Before downloading, run this command to termux :
 * kalifs-arm64-nano (Arm64-v8a/AArch64)
 
 ---
-Install Kali-linux via Rootless [Click here](https://github.com/wahasa/kali-linux)
+Install Kali-linux via Rootless [Click here](https://github.com/wahasa/nethunter)
 
 ---
 ### Installation
