@@ -31,7 +31,7 @@ Copy and paste this command to Termux :
 ```
 pkg install wget -y && wget  && chmod +x  && ./
 ```
-
+</br>
 2. Start Kali-linux</br>
 
 > nethunter
