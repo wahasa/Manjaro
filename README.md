@@ -27,4 +27,56 @@ Before downloading, run this command to termux :
 Install Kali-linux via Rootless [Click here](https://github.com/wahasa/nethunter)
 
 ---
-### Installation
+### Installation (Kali-Only)
+Copy and paste this command to Termux :
+
+> pkg update && pkg upgrade
+
+> pkg install root-repo x11-repo
+
+---
+1. Install kali-Nethunter from termux</br>
+on Termux, run this command :
+
+```
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/nethunter/main/install-nethunter.sh && chmod +x install-nethunter.sh && ./install-nethunter.sh
+```
+
+</br>
+Note :</br>
+The file size is 1.7 Gb, the extract time is 10-15 minutes and when it is finished it will be taken to the Kali-Nethunter menu.
+
+---
+2. [Install kali-Nethunter from Sdcard](https://youtu.be/ko5m-ghehKw)</br>
+on Termux, run this command :
+
+> termux-setup-storage
+
+> cd /sdcard/Download
+
+> cp (Nama file) ~/
+
+> cd 
+```
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/nethunter/main/install-nethunter.sh && chmod +x install-nethunter.sh && ./install-nethunter.sh
+```
+
+</br>
+Note :</br>
+If there are options (Y/N), select (N) all. the extract time is 10-15 minutes and when it is finished it will be taken to the Kali-Nethunter menu.
+
+---
+3. Start Kali-Nethunter</br>
+
+> nethunter
+
+---
+4. Stop Kali-Nethunter
+
+> exit
+
+</br>
+
+Note :</br>
+[sudo] password for kali:kali
+</br>
