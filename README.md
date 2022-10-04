@@ -45,4 +45,10 @@ pkg install wget -y && wget  && chmod +x  && ./
 
 Note :</br>
 [sudo] password for kali:kali
+
 </br>
+
+---
+<p align="center">Good Luck</p>
+
+---
