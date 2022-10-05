@@ -18,11 +18,14 @@ xrdb $HOME/.Xresources
 startxfce4" > ~/.vnc/xstartup
 echo "vncserver -geometry 1600x900 -name remote-desktop :1" > /usr/local/bin/vnc-start
 echo "vncserver -kill :1" > /usr/local/bin/vnc-stop
-clear
+
 chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/vnc-start
 chmod +x /usr/local/bin/vnc-stop
 
+echo " "
+echo "Installing browser,.."
+echo " "
 clear
 echo " "
 echo "Vnc Server address will run at 127.0.0.1:5901"
