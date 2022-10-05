@@ -26,6 +26,7 @@ chmod +x /usr/local/bin/vnc-stop
 echo " "
 echo "Installing browser,.."
 echo " "
+sudo apt install firefox-esr -y
 clear
 echo " "
 echo "Vnc Server address will run at 127.0.0.1:5901"
