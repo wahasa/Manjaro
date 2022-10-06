@@ -52,12 +52,17 @@ Note :</br>
 wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
-</br>
-Install Manual
+Note :</br>
+[sudo] password for kali:kali
+
+---
+Instruction Install Manual
 
 on kali-linux, run this command :
 
 > sudo apt update && sudo apt upgrade
+
+1. Get the necessary components
 
 > sudo apt install udisks2 -y
 
@@ -65,9 +70,29 @@ on kali-linux, run this command :
 
 > sudo apt-mark hold udisks2
 
+2. Installing a desktop environment
+
 > sudo apt install xfce4 xfce4-goodies xfce4-terminal -y
 
 > sudo apt install tigervnc-standalone-server dbus-x11 -y
+
+3. Setup the necessary files
+
+> mkdir -p ~/.vnc
+
+> echo "#!/bin/bash
+xrdb $HOME/.Xresources
+> startxfce4" > ~/.vnc/xstartup
+
+> echo "vncserver -geometry 1600x900 -name remote-desktop :1" > /usr/local/bin/vnc-start
+
+> echo "vncserver -kill :1" > /usr/local/bin/vnc-stop
+
+> chmod +x ~/.vnc/xstartup
+
+> chmod +x /usr/local/bin/vnc-start
+
+> chmod +x /usr/local/bin/vnc-stop
 
 </br>
 
