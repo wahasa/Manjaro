@@ -70,7 +70,7 @@ on kali-linux, run this command :
 
 > sudo apt-mark hold udisks2
 
-2. Installing a desktop environment
+2. Installing desktop environment
 
 > sudo apt install xfce4 xfce4-goodies xfce4-terminal -y
 
@@ -93,6 +93,41 @@ xrdb $HOME/.Xresources
 > chmod +x /usr/local/bin/vnc-start
 
 > chmod +x /usr/local/bin/vnc-stop
+
+---
+### VNC Viewer
+
+1. Start VNC Server
+
+on Kali-linux, run this command to start :
+
+```
+vnc-start
+```
+
+2. Open Vnc Viewer
+
+Add (+) VNC Client to connect, fill with :
+
+Address
+```
+localhost:1
+```
+
+Name
+```
+Ubuntu 22
+```
+
+To disconnect VNC Client, click (X) on the right.
+
+3. Stop VNC Server
+
+on Kali-linux, run this command to stop :
+
+```
+vnc-stop
+```
 
 </br>
 
