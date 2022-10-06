@@ -31,8 +31,9 @@ Copy and paste this command to Termux :
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/kali-linux/main/install-kali.sh && chmod +x install-kali.sh && ./install-kali.sh
 ```
-</br>
-2. Start Kali-linux</br>
+
+---
+2. Start Kali-linux
 
 > nethunter
 
