@@ -46,6 +46,7 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/kali-linux/
 Note :</br>
 [sudo] password for kali:kali
 
+---
 ### Desktop Environment
 * Install Xfce Desktop
 ```
