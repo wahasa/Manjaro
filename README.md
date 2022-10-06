@@ -57,7 +57,7 @@ Note :</br>
 [sudo] password for kali:kali
 
 ---
-Instruction Install Manual
+* Instruction Install Manual
 
 on kali-linux, run this command :
 
