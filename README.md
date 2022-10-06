@@ -46,6 +46,28 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/kali-linux/
 Note :</br>
 [sudo] password for kali:kali
 
+### Desktop Environment
+* Install Xfce Desktop
+```
+wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
+```
+
+</br>
+Install Manual
+on kali-linux, run this command :
+
+> sudo apt update && sudo apt upgrade
+
+> sudo apt install udisks2 -y
+
+> echo " " > /var/lib/dpkg/info/udisks2.postinst                                                                         apt-mark hold udisks2                                                                                                                                   apt-get install keyboard-configuration -y
+
+> sudo apt-mark hold udisks2
+
+> sudo apt install xfce4 xfce4-goodies xfce4-terminal -y
+
+> sudo apt install tigervnc-standalone-server dbus-x11 -y
+
 </br>
 
 ---
