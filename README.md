@@ -54,13 +54,14 @@ wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmo
 
 </br>
 Install Manual
+
 on kali-linux, run this command :
 
 > sudo apt update && sudo apt upgrade
 
 > sudo apt install udisks2 -y
 
-> echo " " > /var/lib/dpkg/info/udisks2.postinst                                                                         apt-mark hold udisks2                                                                                                                                   apt-get install keyboard-configuration -y
+> echo " " > /var/lib/dpkg/info/udisks2.postinst
 
 > sudo apt-mark hold udisks2
 
