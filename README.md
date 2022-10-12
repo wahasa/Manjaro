@@ -124,7 +124,7 @@ localhost:1
 
 Name
 ```
-Ubuntu 22
+Kali Desktop
 ```
 
 To disconnect VNC Client, click (X) on the right.
