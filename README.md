@@ -103,6 +103,11 @@ xrdb $HOME/.Xresources
 - [x] Install Libre Office [Click here](https://github.com/wahasa/nethunter/issues/5#issuecomment-1264203556)</br>
 - [x] Install Desktop Environment [Click here](https://github.com/wahasa/kali-linux/issues/1)
 
+</br>
+
+Visit problem now in : 
+[Issues](https://github.com/wahasa/nethunter/issues)
+
 ---
 ### VNC Viewer
 
