@@ -26,7 +26,7 @@ Copy and paste this command to Termux :
 > pkg install root-repo x11-repo
 
 ---
-1. Install kali-linux
+1. [Install kali-linux](https://youtu.be/yOQs0Gg3iMk)
 
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/kali-linux/main/install-kali.sh && chmod +x install-kali.sh && ./install-kali.sh
@@ -58,7 +58,7 @@ Note :</br>
 [sudo] password for kali:kali
 
 ---
-* Instruction Install Manual
+* [Instruction Install Manual](https://youtu.be/aMLUEtuBgn8)
 
 on kali-linux, run this command :
 
