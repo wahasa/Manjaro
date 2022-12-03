@@ -16,7 +16,7 @@ For android 12 in [Termux v0.119.1](https://apkcombo.com/termux/com.termux/) fix
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ---
-Install Kali-linux via Rootless [Click here](https://github.com/wahasa/nethunter)
+Install Kali-linux via Rootless [Click here,.](https://github.com/wahasa/nethunter)
 
 ---
 ### Installation (Kali-Only)
@@ -50,6 +50,9 @@ Note :</br>
 
 ---
 ### Desktop Environment
+on Kali, run this command :
+
+> apt update && apt upgrade
 * Install Xfce Desktop
 ```
 wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
@@ -66,8 +69,6 @@ Note :</br>
 - [x] Browserfix [Click here,.](https://github.com/wahasa/nethunter/issues/3#issuecomment-1178448051)</br>
 - [x] Install Chromium [Click here,.](https://github.com/wahasa/nethunter/issues/5#issuecomment-1264203443)</br>
 - [x] Install Libre Office [Click here,.](https://github.com/wahasa/nethunter/issues/5#issuecomment-1264203556)</br>
-
-</br>
 
 Visit problem now in : 
 [Issues](https://github.com/wahasa/nethunter/issues)
