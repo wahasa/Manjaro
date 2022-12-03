@@ -6,8 +6,9 @@
 ## Kali-Linux on Termux Android
 
 ---
-Warning :</br>
-Especially for Android 12 there are several bugs, and for more details, please read in Official [Termux](https://github.com/termux/termux-app).
+Announcement :
+
+For android 12 in [Termux v0.119.1](https://apkcombo.com/termux/com.termux/) fixed.
 
 ---
 • Install Apps on Android
@@ -53,48 +54,12 @@ Note :</br>
 ```
 wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
+* Install Lxde Desktop
+* Install Lxqt Desktop
+* Install Kde Desktop
 
 Note :</br>
 [sudo] password for kali:kali
-
----
-* [Instruction Install Manual](https://youtu.be/aMLUEtuBgn8)
-
-on kali-linux, run this command :
-
-> sudo apt update && sudo apt upgrade
-
-1. Get the necessary components
-
-> sudo apt install udisks2 -y
-
-> echo " " > /var/lib/dpkg/info/udisks2.postinst
-
-> sudo apt-mark hold udisks2
-
-2. Installing desktop environment
-
-> sudo apt install xfce4 xfce4-goodies xfce4-terminal -y
-
-> sudo apt install tigervnc-standalone-server dbus-x11 -y
-
-3. Setup the necessary files
-
-> mkdir -p ~/.vnc
-
-> echo "#!/bin/bash
-xrdb $HOME/.Xresources
-> startxfce4" > ~/.vnc/xstartup
-
-> echo "vncserver -geometry 1600x900 -name remote-desktop :1" > /usr/local/bin/vnc-start
-
-> echo "vncserver -kill :1" > /usr/local/bin/vnc-stop
-
-> chmod +x ~/.vnc/xstartup
-
-> chmod +x /usr/local/bin/vnc-start
-
-> chmod +x /usr/local/bin/vnc-stop
 
 ---
 - [x] Soundfix [Click here](https://github.com/wahasa/nethunter/issues/3#issuecomment-1178462491)</br>
