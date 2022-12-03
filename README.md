@@ -57,7 +57,12 @@ on Kali, run this command :
 ```
 wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
+
 * Install Lxde Desktop
+```
+wget  && chmod +x  && ./
+```
+
 * Install Lxqt Desktop
 * Install Kde Desktop
 
