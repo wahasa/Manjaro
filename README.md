@@ -53,7 +53,7 @@ Note :</br>
 on Kali, run this command :
 
 > apt update && apt upgrade
-* Install Xfce Desktop
+* [Install Xfce Desktop](https://youtu.be/aMLUEtuBgn8)
 ```
 wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
