@@ -30,7 +30,7 @@ Copy and paste this command to Termux :
 1. [Install kali-linux](https://youtu.be/yOQs0Gg3iMk)
 
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/kali-linux/main/install-kali.sh && chmod +x install-kali.sh && ./install-kali.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Kali/kali2022.sh && chmod +x kali2022.sh && ./kali2022.sh
 ```
 
 ---
@@ -55,12 +55,12 @@ on Kali, run this command :
 > apt update && apt upgrade
 * Install Xfce Desktop
 ```
-wget https://raw.githubusercontent.com/wahasa/kali-linux/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
+wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
 * Install Lxde Desktop
 ```
-wget  && chmod +x  && ./
+wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
 ```
 
 * Install Lxqt Desktop
