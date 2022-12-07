@@ -21,7 +21,8 @@ echo "#!/bin/sh
 export DISPLAY=:1
 rm -rf /run/dbus/dbus.pid
 dbus-daemon --system
-dbus-launch startxfce4" > /usr/local/bin/vncstartclear
+dbus-launch startxfce4" > /usr/local/bin/vncstart
+clear
 chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/vncstart
 chmod +x /usr/local/bin/vnc-start
