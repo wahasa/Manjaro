@@ -11,9 +11,17 @@ sudo apt --fix-broken install
 sudo apt clean
 
 #Setup the necessary files
+mkdir -p ~/.vnc
+echo "#!/bin/bash
+xrdb $HOME/.Xresources
+gnome-session --builtin --session=gnome-flashback-metacity --disable-acceleration-check --debug
+metacity
+gnome-panel
+gnome-flashback" > ~/.vnc/xstartup
+echo "vncserver -geometry 1600x900 -name remote-desktop :1" > /usr/local/bin/vnc-start
+echo "vncserver -kill :1" > /usr/local/bin/vnc-stop
 echo "#!/bin/sh
 export DISPLAY=:1
-export PULSE_SERVER=127.0.0.1
 rm -rf /run/dbus/dbus.pid
 dbus-daemon --system
 dbus-launch gnome-session --builtin --session=gnome-flashback-metacity --disable-acceleration-check --debug &
@@ -21,7 +29,10 @@ dbus-launch metacity &
 dbus-launch gnome-panel &
 dbus-launch gnome-flashback" > /usr/local/bin/vncstart
 clear
+chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/vncstart
+chmod +x /usr/local/bin/vnc-start
+chmod +x /usr/local/bin/vnc-stop
 
 echo " "
 echo "Installing browser,.."
