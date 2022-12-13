@@ -64,7 +64,14 @@ wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-lxde.sh
 ```
 
 * Install Lxqt Desktop
+```
+wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-lxqt.sh && chmod +x de-lxqt.sh && ./de-lxqt.sh
+```
+
 * Install Kde Desktop
+```
+wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
+```
 
 Note :</br>
 [sudo] password for kali:kali
