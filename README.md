@@ -1,13 +1,3 @@
----
-Basic commands Ubuntu
-> pacman -Syy : Update list package.</br>
-> pacman -Su : Upgrade package.</br>
-> pacman -Ss (pkg) : Search package.</br>
-> pacman -S (pkg) : Install package.</br>
-> pacman -Rs (pkg) : Delete package.</br>
-> pacman -h : Help all commands.
-
----
 
 <p align="center">My Channel</br><b>
 | <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
@@ -29,7 +19,7 @@ For android 12 in [Termux v0.119.1](https://apkcombo.com/termux/com.termux/) fix
 Install Kali-Nethunter via Rootless [Click here,.](https://github.com/wahasa/nethunter)
 
 ---
-### Installation (Kali-Only)
+### Installation
 Copy and paste this command to Termux :
 
 > pkg update && pkg upgrade
@@ -37,54 +27,28 @@ Copy and paste this command to Termux :
 > pkg install root-repo x11-repo
 
 ---
-1. [Install kali-linux](https://youtu.be/yOQs0Gg3iMk)
-
-```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Kali/kali2022.sh && chmod +x kali2022.sh && ./kali2022.sh
-```
-
----
+1. Install kali-linux
 2. Start Kali-linux
-
-> nethunter
-
----
 3. Stop Kali-linux
 
-> exit
-
-</br>
-
-Note :</br>
-[sudo] password for kali:kali
+---
+Basic commands Ubuntu
+> pacman -Syy : Update list package.</br>
+> pacman -Su : Upgrade package.</br>
+> pacman -Ss (pkg) : Search package.</br>
+> pacman -S (pkg) : Install package.</br>
+> pacman -Rs (pkg) : Delete package.</br>
+> pacman -h : Help all commands.
 
 ---
 ### Desktop Environment
 on Kali, run this command :
 
 > apt update && apt upgrade
-* [Install Xfce Desktop](https://youtu.be/aMLUEtuBgn8)
-```
-wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
-```
-
+* Install Xfce Desktop
 * Install Lxde Desktop
-```
-wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
-```
-
 * Install Lxqt Desktop
-```
-wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-lxqt.sh && chmod +x de-lxqt.sh && ./de-lxqt.sh
-```
-
 * Install Kde Desktop
-```
-wget https://raw.githubusercontent.com/wahasa/kali-linux/main/Desktop/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
-```
-
-Note :</br>
-[sudo] password for kali:kali
 
 ---
 - [x] Soundfix [Click here,.](https://github.com/wahasa/nethunter/issues/3#issuecomment-1178462491)</br>
