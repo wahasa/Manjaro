@@ -1,46 +1,24 @@
 #!/bin/bash
-
-#Get the necessary components
-sudo apt update
-sudo apt install udisks2 -y
-echo " " > /var/lib/dpkg/info/udisks2.postinst
-sudo apt-mark hold udisks2
-sudo apt install lxde lxterminal -y
-sudo apt install tigervnc-standalone-server dbus-x11 -y
+pacman -Syy
+pacman -S openssl bash-completion --noconfirm
+pacman -S lxde firefox tigervnc dbus --noconfirm
 mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
-sudo apt --fix-broken install
-sudo apt clean
 
-#Setup the necessary files
-mkdir -p ~/.vnc
 echo "#!/bin/bash
-xrdb $HOME/.Xresources
-startlxde" > ~/.vnc/xstartup
-echo "vncserver -geometry 1600x900 -name remote-desktop :1" > /usr/local/bin/vnc-start
-echo "vncserver -kill :1" > /usr/local/bin/vnc-stop
-echo "#!/bin/sh
-export DISPLAY=:1
-rm -rf /run/dbus/dbus.pid
-dbus-daemon --system
-dbus-launch startlxde" > /usr/local/bin/vncstart
+export PULSE_SERVER=127.0.0.1
+vncserver :1" > /usr/local/bin/vnc-start
+chmod +x /usr/local/bin/*
+   clear
+   echo ""
+   echo "Installing browser,.."
+   echo ""
+pacman -S firefox --noconfirm
 clear
-chmod +x ~/.vnc/xstartup
-chmod +x /usr/local/bin/vncstart
-chmod +x /usr/local/bin/vnc-start
-chmod +x /usr/local/bin/vnc-stop
-
-echo " "
-echo "Installing browser,.."
-echo " "
-sudo apt install firefox-esr -y
-clear
-echo " "
+echo ""
 echo "Vnc Server address will run at 127.0.0.1:5901"
-echo " "
+echo ""
 echo "Start Vnc Server, run vnc-start"
-echo " "
-echo "Stop Vnc Server, run vnc-stop"
-echo " "
+echo "Stop  Vnc Server, run ctrl+c"
+echo ""
 
-rm de-lxde.sh
-vnc-start
+#de-lxde.sh
