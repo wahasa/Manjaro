@@ -4,7 +4,9 @@ pacman -S openssl bash-completion --noconfirm
 pacman -S xfce4 firefox tigervnc dbus --noconfirm
 pacman -S xfburn parole ristretto --noconfirm
 
-echo "vncserver :1" > /usr/local/bin/vnc-start
+echo "#!/bin/bash
+export PULSE_SERVER=127.0.0.1
+vncserver :1" > /usr/local/bin/vnc-start
 chmod +x /usr/local/bin/*
    clear
    echo ""
