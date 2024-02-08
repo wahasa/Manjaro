@@ -3,7 +3,7 @@
 | <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
 
 ---
-## Kali-Linux on Termux Android
+## Manjaro on Termux Android
 
 • Install Apps on Android
 - [x] [Termux](https://github.com/termux/termux-app/releases)
