@@ -8,5 +8,5 @@ clear
 echo ""
 echo "Installing browser,.."
 echo ""
-pacman -S firefox
+pacman -S firefox --noconfirm
 clear
