@@ -42,13 +42,13 @@ on Kali, run this command :
 * Install Kde Desktop
 
 ---
-- [x] Soundfix [Click here,.](https://github.com/wahasa/nethunter/issues/3#issuecomment-1178462491)</br>
-- [x] Browserfix [Click here,.](https://github.com/wahasa/nethunter/issues/3#issuecomment-1178448051)</br>
-- [x] Install Chromium [Click here,.](https://github.com/wahasa/nethunter/issues/5#issuecomment-1264203443)</br>
-- [x] Install Libre Office [Click here,.](https://github.com/wahasa/nethunter/issues/5#issuecomment-1264203556)</br>
+- [x] Soundfix</br>
+- [x] Browserfix</br>
+- [x] Install Chromium</br>
+- [x] Install Libre Office</br>
 
 Visit problem now in : 
-[Issues](https://github.com/wahasa/nethunter/issues)
+[Issues]()
 
 ---
 ### VNC Viewer
