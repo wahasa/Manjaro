@@ -72,7 +72,7 @@ localhost:1
 
 Name
 ```
-Kali Desktop
+Manjaro Desktop
 ```
 
 To disconnect VNC Client, click (X) on the right.
