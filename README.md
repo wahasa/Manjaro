@@ -18,12 +18,12 @@ Copy and paste this command to Termux :
 > pkg install root-repo x11-repo
 
 ---
-1. Install kali-linux
-2. Start Kali-linux
-3. Stop Kali-linux
+1. Install Manjaro
+2. Start Manjaro
+3. Stop Manjaro
 
 ---
-Basic commands Ubuntu
+Basic commands Manjaro
 > pacman -Syy : Update list package.</br>
 > pacman -Su : Upgrade package.</br>
 > pacman -Ss (pkg) : Search package.</br>
@@ -33,9 +33,9 @@ Basic commands Ubuntu
 
 ---
 ### Desktop Environment
-on Kali, run this command :
+on Manjaro, run this command :
 
-> apt update && apt upgrade
+> pacman -Syyu
 * Install Xfce Desktop
 * Install Lxde Desktop
 * Install Lxqt Desktop
@@ -55,7 +55,7 @@ Visit problem now in :
 
 1. Start VNC Server
 
-on Kali-linux, run this command to start :
+on Manjaro, run this command to start :
 
 ```
 vnc-start
@@ -79,12 +79,11 @@ To disconnect VNC Client, click (X) on the right.
 
 3. Stop VNC Server
 
-on Kali-linux, run this command to stop :
+on Manjaro, run this command to stop :
 
 ```
 vnc-stop
 ```
-
 </br>
 
 ---
