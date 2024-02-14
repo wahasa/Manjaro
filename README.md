@@ -11,16 +11,31 @@
 
 ---
 ### Installation
-Copy and paste this command to Termux :
+Copy and paste this commands to Termux
 
-> pkg update && pkg upgrade
-
-> pkg install root-repo x11-repo
+> pkg update
 
 ---
-1. Install Manjaro
-2. Start Manjaro
-3. Stop Manjaro
+#### Manjaro (Aarch64)
+
+* Install Manjaro
+```
+```
+
+* Start Manjaro
+```
+manjaro
+```
+
+* Stop Manjaro
+```
+exit
+```
+
+* Remove Manjaro
+```
+rm -rf manjaro-fs
+```
 
 ---
 Basic commands Manjaro
@@ -33,7 +48,7 @@ Basic commands Manjaro
 
 ---
 ### Desktop Environment
-on Manjaro, run this command :
+on Manjaro, run this commands
 
 > pacman -Syyu
 * Install Xfce Desktop
@@ -55,7 +70,7 @@ Visit problem now in :
 
 1. Start VNC Server
 
-on Manjaro, run this command to start :
+on Manjaro, run this command to start
 
 ```
 vnc-start
@@ -79,7 +94,7 @@ To disconnect VNC Client, click (X) on the right.
 
 3. Stop VNC Server
 
-on Manjaro, run this command to stop :
+on Manjaro, run this command to stop
 
 ```
 vnc-stop
