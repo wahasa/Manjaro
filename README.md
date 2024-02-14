@@ -15,7 +15,6 @@ Copy and paste this commands to Termux
 
 > pkg update
 
----
 #### Manjaro (Aarch64)
 
 * Install Manjaro
@@ -68,15 +67,14 @@ Visit problem now in :
 ---
 ### VNC Viewer
 
-1. Start VNC Server
+* Start VNC Server
 
 on Manjaro, run this command to start
-
 ```
 vnc-start
 ```
 
-2. Open Vnc Viewer
+* Open Vnc Viewer
 
 Add (+) VNC Client to connect, fill with :
 
@@ -92,7 +90,7 @@ Manjaro Desktop
 
 To disconnect VNC Client, click (X) on the right.
 
-3. Stop VNC Server
+* Stop VNC Server
 
 on Manjaro, run this command to stop
 
