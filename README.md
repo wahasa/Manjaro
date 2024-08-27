@@ -81,7 +81,7 @@ Note :</br>
 apt install pulseaudio nano -y
 ```
 ```
-nano $PREFIX/bin/arch
+nano $PREFIX/bin/manjaro
 ```
 
 Copy Script
@@ -90,12 +90,12 @@ Copy Script
 pulseaudio --start \
     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
     --exit-idle-time=-1
-proot-distro login archlinux --shared-tmp
+proot-distro login manjaro --shared-tmp
 ```
 Save : ctrl + x, click y enter.
 
 ```
-chmod +x $PREFIX/bin/arch
+chmod +x $PREFIX/bin/manjaro
 ```
 
 ---
@@ -260,7 +260,7 @@ To disconnect VNC Client, click (X) on the right.
 ---
 * Stop VNC Server
 
-In Session 2 (arch), run this command
+In Session 2 (mnjaro), run this command
 > Click Ctrl+c, enter (2X) 
 
 In Session 1 (termux), run this command
@@ -327,7 +327,7 @@ mate-session
 
 Close app termux-x11
 
-In session 2 (arch), run this command
+In session 2 (mnjaro), run this command
 > Click Ctrl+c, enter (2X)
 
 In session 1 (termux), run this command
