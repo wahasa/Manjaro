@@ -217,7 +217,7 @@ Add new session</br>
 Swipe the screen from left to right in termux, click 'New Session'.
 
 ---
-In Session 2 (manjro), run this commands
+In Session 2 (manjaro), run this commands
 ```
 export DISPLAY=:1
 ```
@@ -295,7 +295,7 @@ Add new session</br>
 Swipe the screen from left to right in termux, click 'New Session'.
 
 ---
-In Session 2 (manjro), run this commands
+In Session 2 (manjaro), run this commands
 ```
 export DISPLAY=:1
 ```
