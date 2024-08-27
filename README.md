@@ -217,7 +217,7 @@ Add new session</br>
 Swipe the screen from left to right in termux, click 'New Session'.
 
 ---
-In Session 2 (mnjro), run this commands
+In Session 2 (manjro), run this commands
 ```
 export DISPLAY=:1
 ```
@@ -260,7 +260,7 @@ To disconnect VNC Client, click (X) on the right.
 ---
 * Stop VNC Server
 
-In Session 2 (mnjaro), run this command
+In Session 2 (manjaro), run this command
 > Click Ctrl+c, enter (2X) 
 
 In Session 1 (termux), run this command
@@ -295,7 +295,7 @@ Add new session</br>
 Swipe the screen from left to right in termux, click 'New Session'.
 
 ---
-In Session 2 (mnjro), run this commands
+In Session 2 (manjro), run this commands
 ```
 export DISPLAY=:1
 ```
@@ -327,7 +327,7 @@ mate-session
 
 Close app termux-x11
 
-In session 2 (mnjaro), run this command
+In session 2 (manjaro), run this command
 > Click Ctrl+c, enter (2X)
 
 In session 1 (termux), run this command
