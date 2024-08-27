@@ -117,7 +117,7 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ---
 </details>
 
-<details><summary><code><b>Install Desktop Arch</b></code></summary></br>
+<details><summary><code><b>Install Desktop Mnjaro</b></code></summary></br>
 
 In Manjaro, run this command
 > pacman -Syu
