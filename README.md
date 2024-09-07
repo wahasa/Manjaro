@@ -36,7 +36,7 @@ apt install proot-distro -y ; proot-distro install manjaro
 > pacman -Syu : Upgrade package.</br>
 > pacman -Ss (pkg) : Search package.</br>
 > pacman -S (pkg) : Install package.</br>
-> pacman -R (pkg) : Delete pkg.</br>
+> pacman -R (pkg) : Delete package.</br>
 > pacman -h : Help all commands.
 
 ---
@@ -145,7 +145,6 @@ pacman -S mate mate-extra firefox
 
 ---
 </details>
-
 
 <details><summary><code><b>Install Applications</b></code></summary></br>
 
