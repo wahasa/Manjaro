@@ -30,7 +30,7 @@ if [ "$first" != 1 ];then
 	       wget -q --show-progress "https://github.com/manjaro-arm/rootfs/releases/download/${build}/Manjaro-ARM-${archurl}-latest.tar.gz" -O $tarball
 	 fi
          mkdir -p $folder
-	       mkdir -p $folder/binds
+	 mkdir -p $folder/binds
          echo "Decompressing Rootfs, please be patient."
          proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
     fi
@@ -99,6 +99,7 @@ EOM
      chmod -R 755 $folder
      echo "Removing image for some space"
      #rm $tarball
+     echo ""
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .manjaro' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -113,7 +114,8 @@ EOL
 echo "#!/bin/bash
 touch ~/.hushlogin
 pacman-key --init ; pacman-key --populate
-pacman -Syyu ; pacman -S dialog nano sudo ncurses tzdata --noconfirm
+pacman -Syyu ; cp /etc/skel/.bashrc .
+pacman -S dialog nano sudo ncurses tzdata --noconfirm
 ln -s /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
