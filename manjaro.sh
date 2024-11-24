@@ -21,7 +21,7 @@ if [ "$first" != 1 ];then
                #arm*)
                        #archurl="armhfp" ;;
                #i386)
-		                   #archurl="x86" ;;
+		       #archurl="x86" ;;
                #x86_64)
                        #archurl="x86_64" ;;
                *)
