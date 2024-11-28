@@ -2,10 +2,10 @@
 pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
+echo ""
 manjaro=2024
 build=20241118
-   echo ""
-   neofetch --ascii_distro Manjaro -L
+neofetch --ascii_distro Manjaro -L
 folder=manjaro-fs
 if [ -d "$folder" ]; then
          first=1
@@ -19,7 +19,7 @@ if [ "$first" != 1 ];then
                aarch64)
                        archurl="aarch64" ;;
                #arm*)
-                       #archurl="armhfp" ;;
+                       #archurl="armhf" ;;
                #i386)
 		       #archurl="x86" ;;
                #x86_64)
@@ -34,12 +34,12 @@ if [ "$first" != 1 ];then
          echo "Decompressing Rootfs, please be patient."
          proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
     fi
+    echo ""
     echo "localhost" > $folder/etc/hostname
     echo "127.0.0.1 localhost" > $folder/etc/hosts
     echo "nameserver 8.8.8.8" > $folder/etc/resolv.conf
 bin=.manjaro
 linux=manjaro
-echo ""
 echo "Writing launch script"
 cat > $bin <<- EOM
 #!/data/data/com.termux/files/usr/bin/bash
@@ -99,22 +99,20 @@ EOM
      chmod -R 755 $folder
      echo "Removing image for some space"
      #rm $tarball
-     echo ""
+echo ""
+echo "#Manjaro Repositories
+Server = https://mirrors.cicku.me/manjaro/arm-stable/$repo/$arch" > $folder/etc/pacman.d/mirrorlist
+echo "" > $folder/root/.hushlogin
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .manjaro' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
-cat > $folder/etc/pacman.d/mirrorlist <<'EOL'
-#Manjaro Repositories
-Server = https://mirrors.cicku.me/manjaro/arm-stable/$repo/$arch
-EOL
      clear
      echo ""
-     echo "Updating Manjaro,.."
+     echo "Updating Package,.."
      echo ""
 echo "#!/bin/bash
-touch ~/.hushlogin
 pacman-key --init ; pacman-key --populate
-pacman -Syyu ; cp /etc/skel/.bashrc .
+pacman -Syyu --noconfirm ; cp /etc/skel/.bashrc .
 pacman -S dialog nano sudo ncurses tzdata --noconfirm
 ln -s /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 rm -rf ~/.bash_profile
@@ -122,9 +120,9 @@ exit" > $folder/root/.bash_profile
 bash $bin
      clear
      echo ""
-     echo "You can login to Manjaro with 'manjaro' script next time"
+     echo "You can login to Linux with 'manjaro' script next time"
      echo ""
      #rm manjaro.sh
 #
 ## Script edited by 'WaHaSa', Script revision-5.
-##
+#
