@@ -7,6 +7,12 @@ pacman -S blender
 ```
 </details>
 
+<details><summary><code><b>Chromium</b></code></summary></br>
+
+```
+pacman -S chromium
+```
+
 <details><summary><code><b>Firefox</b></code></summary></br>
 
 ```
@@ -60,13 +66,6 @@ pacman -S lollypop
 
 ```
 pacman -S thunderbird
-```
-</details>
-
-<details><summary><code><b>Vim</b></code></summary></br>
-
-```
-pacman -S vim
 ```
 </details>
 </br>
