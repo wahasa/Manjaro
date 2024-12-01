@@ -63,6 +63,20 @@ pacman -S lollypop
 ```
 </details>
 
+<details><summary><code><b>OBS Studio</b></code></summary></br>
+
+```
+pacman -S obs-studio
+```
+</details>
+
+<details><summary><code><b>Telegram</b></code></summary></br>
+
+```
+pacman -S telegram-desktop
+```
+</details>
+
 <details><summary><code><b>Thunderbird</b></code></summary></br>
 
 ```
