@@ -12,6 +12,7 @@ pacman -S blender
 ```
 pacman -S chromium
 ```
+</details>
 
 <details><summary><code><b>Firefox</b></code></summary></br>
 
