@@ -3,7 +3,7 @@
 
 ---
 ### Manjaro on Termux Android
-![Manjaro](https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Manjaro.jpg)
+<img src="https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Distro/Manjaro-Distro.jpg">
 
 ---
 • Install Apps on Android
