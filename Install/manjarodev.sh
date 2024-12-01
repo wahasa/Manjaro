@@ -117,7 +117,18 @@ pacman -S dialog nano sudo ncurses tzdata --noconfirm
 ln -s /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
-bash $bin
+     bash $bin
+     sleep 2
+echo 'PRETTY_NAME="Manjaro (Development Branch) Linux"
+NAME="Manjaro ARM"
+ID=manjaro-arm
+ID_LIKE=arch
+BUILD_ID=development
+ANSI_COLOR="32;1;24;144;200"
+HOME_URL="https://manjaro.org"
+SUPPORT_URL="https://forum.manjaro.org/c/arm"
+BUG_REPORT_URL="https://docs.manjaro.org/reporting-bugs"
+LOGO=manjarolinux-logo' > $folder/etc/os-release
      clear
      echo ""
      echo "You can login to Linux with 'manjaro' script next time"
@@ -126,4 +137,3 @@ bash $bin
 #
 ## Script edited by 'WaHaSa', Script revision-5.
 #
-
