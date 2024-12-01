@@ -100,8 +100,8 @@ EOM
      echo "Removing image for some space"
      #rm $tarball
 echo ""
-echo "#Manjaro Repositories
-Server = https://mirrors.cicku.me/manjaro/arm-stable/$repo/$arch" > $folder/etc/pacman.d/mirrorlist
+echo '#Manjaro Repositories
+Server = https://mirrors.cicku.me/manjaro/arm-stable/$repo/$arch' > $folder/etc/pacman.d/mirrorlist
 echo "" > $folder/root/.hushlogin
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .manjaro' > $PREFIX/bin/$linux
