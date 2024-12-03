@@ -2,7 +2,7 @@ Desktop Environments
 
 - Install Enlightenment
 ```
-pacman -S enlightenment
+pacman -S enlightenment pulseaudio dbus
 ```
 
 Xstartup
@@ -13,7 +13,7 @@ exec enlightenment_start
 
 - Install Mate
 ```
-pacman -S mate mate-extra network-manager-applet dconf-editor dbus
+pacman -S mate mate-extra network-manager-applet dconf-editor pulseaudio dbus
 ```
 mate-session
 
