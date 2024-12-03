@@ -4,6 +4,8 @@ Desktop Environments
 ```
 pacman -S enlightenment
 ```
+- Install Mate
+~~pacman -S mate network-manager-applet~~
 
 Xstartup
 > exec enlightenment_start
