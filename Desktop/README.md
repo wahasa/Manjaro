@@ -4,11 +4,16 @@ Desktop Environments
 ```
 pacman -S enlightenment
 ```
-- Install Mate
-~~pacman -S mate network-manager-applet~~
 
 Xstartup
-> exec enlightenment_start
+
+``
+exec enlightenment_start
+``
+
+- Install Mate
+
+~~pacman -S mate network-manager-applet~~
 
 Source : </br>
 - https://wiki.manjaro.org/index.php/Install_Desktop_Environments
