@@ -1,5 +1,12 @@
 Desktop Environments
 
+- Lxqt
+```
+pacman -S lxqt xscreensaver pulseaudio dbus
+```
+
+> startlxqt
+
 - Install Enlightenment
 ```
 pacman -S enlightenment pulseaudio dbus
