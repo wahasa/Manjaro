@@ -31,7 +31,7 @@ pacman -S lxqt xscreensaver firefox pulseaudio dbus
 <img src="">
 
 ```
-
+pacman -S plasma kio-extras firefox pulseaudio dbus
 ```
 </details>
 
