@@ -28,9 +28,13 @@ pacman -S lxqt xscreensaver firefox pulseaudio dbus
 </details>
 
 <details><summary><b><code>Kde- Desktop</code></b></summary></br>
-
 <img src="">
+
 ```
 
 ```
 </details>
+
+### Install Desktop Managers
+
+Enlightenment
