@@ -5,7 +5,7 @@
 - https://forum.manjaro.org/c/announcements/releases
 
 <b>Manjaro Repository</b>
-- https://dl-cdn.alpinelinux.org/alpine
+- https://mirrors.cicku.me/manjaro
 
 <b>Manjaro Rootfs</b>
 
