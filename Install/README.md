@@ -2,7 +2,7 @@
 - https://manjaro.org
 
 <b>Manjaro Release</b>
-- https://alpinelinux.org/releases
+- https://forum.manjaro.org/c/announcements/releases
 
 <b>Manjaro Repository</b>
 - https://dl-cdn.alpinelinux.org/alpine
