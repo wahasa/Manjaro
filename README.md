@@ -17,7 +17,7 @@ Copy and paste this commands to Termux
 <details><summary><b><code>Install Manjaro</code></b></summary></br>
 
 > apt install wget
-- [x] Manjaro 24.2 (Latest-release)
+- [x] Manjaro (Latest-release)
 
 Rootfs : Arm64 (Aarch64)
 ```
