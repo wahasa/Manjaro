@@ -9,16 +9,12 @@ pacman -S blender
 
 <details><summary><code><b>Chromium</b></code></summary></br>
 
-```
-pacman -S chromium
-```
+[> Click Here <](https://github.com/wahasa/Manjaro/blob/main/Apps/Chromiumfix.md#fixed-chromium-on-fedora)
 </details>
 
 <details><summary><code><b>Firefox</b></code></summary></br>
 
-```
-pacman -S firefox
-```
+[> Click Here <](https://github.com/wahasa/Manjaro/blob/main/Apps/Firefoxfix.md#fixed-firefox-on-fedora)
 </details>
 
 <details><summary><code><b>Gedit</b></code></summary></br>
