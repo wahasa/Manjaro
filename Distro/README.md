@@ -49,7 +49,7 @@ Feature
 apt install pulseaudio nano -y
 ```
 ```
-nano $PREFIX/bin/fedora
+nano $PREFIX/bin/manjaro
 ```
 
 - Copy Script
@@ -58,7 +58,7 @@ nano $PREFIX/bin/fedora
 pulseaudio --start \
     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
     --exit-idle-time=-1
-proot-distro login fedora --shared-tmp
+proot-distro login manjaro --shared-tmp
 ```
 Save : ctrl + x, click y enter.
 
