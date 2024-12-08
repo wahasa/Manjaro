@@ -76,7 +76,7 @@ chmod +x $PREFIX/bin/manjaro
 
 - Remove Manjaro
 ```
-rm $PREFIX/bin/fedora ; pd remove fedora
+rm $PREFIX/bin/manjaro ; pd remove manjaro
 ```
 
 ---
