@@ -26,7 +26,7 @@ wget https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Install/ma
 
 - [x] Manjaro (Development)
 
-Rootfs : Arm64, Amd64
+Rootfs : Arm64 (Aarch64)
 ```
 wget https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Install/manjarodev.sh ; chmod +x manjarodev.sh ; ./manjarodev.sh
 ```
@@ -47,6 +47,15 @@ exit
 ```
 chmod -R 775 fedora-fs ; rm -rf fedora-fs .fedora $PREFIX/bin/manjaro
 ```
+
+---
+<b>Basic commands Manjaro</b>
+> pacman -Sy : Update list package.</br>
+> pacman -Syu : Upgrade package.</br>
+> pacman -Ss (pkg) : Search package.</br>
+> pacman -S (pkg) : Install package.</br>
+> pacman -R (pkg) : Delete package.</br>
+> pacman -h : Help all commands.
 
 ---
 ### Install Desktop Environments
