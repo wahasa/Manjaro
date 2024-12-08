@@ -3,7 +3,7 @@
 
 ---
 ### Manjaro Distro on Termux Android
-<img src="https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Distro/Fedora-Distro.jpg">
+<img src="https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Distro/Manjaro-Distro.jpg">
 
 * Install Apps on Android
 - [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
