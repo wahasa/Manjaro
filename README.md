@@ -45,7 +45,7 @@ exit
 
 * Remove Manjaro
 ```
-chmod -R 775 fedora-fs ; rm -rf fedora-fs .fedora $PREFIX/bin/manjaro
+chmod -R 775 manjaro-fs ; rm -rf manjaro-fs .manjaro $PREFIX/bin/manjaro
 ```
 
 ---
