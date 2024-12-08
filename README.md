@@ -54,8 +54,7 @@ chmod -R 775 manjaro-fs ; rm -rf manjaro-fs .manjaro $PREFIX/bin/manjaro
 > pacman -Syu : Upgrade package.</br>
 > pacman -Ss (pkg) : Search package.</br>
 > pacman -S (pkg) : Install package.</br>
-> pacman -R (pkg) : Delete package.</br>
-> pacman -h : Help all commands.
+> pacman -R (pkg) : Delete package.
 
 ---
 ### Install Desktop Environments
