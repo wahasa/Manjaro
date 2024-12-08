@@ -119,7 +119,7 @@ rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
      bash $bin
      sleep 2
-echo 'PRETTY_NAME="Manjaro (Development Branch) Linux"
+echo 'PRETTY_NAME="Manjaro ARM (Development Branch)"
 NAME="Manjaro ARM"
 ID=manjaro-arm
 ID_LIKE=arch
