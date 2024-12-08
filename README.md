@@ -16,6 +16,39 @@ Copy and paste this commands to Termux
 
 <details><summary><b><code>Install Manjaro</code></b></summary></br>
 
+> apt install wget
+- [x] Manjaro 24.2 (Latest-release)
+
+Rootfs : Arm64 (Aarch64)
+```
+wget https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Install/manjaro.sh ; chmod +x manjaro.sh ; ./manjaro.sh
+```
+
+- [x] Manjaro (Development)
+
+Rootfs : Arm64, Amd64
+```
+wget https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Install/manjarodev.sh ; chmod +x manjarodev.sh ; ./manjarodev.sh
+```
+</details>
+
+---
+* Login Manjaro
+```
+manjaro
+```
+
+* Logout Manjaro
+```
+exit
+```
+
+* Remove Manjaro
+```
+chmod -R 775 fedora-fs ; rm -rf fedora-fs .fedora $PREFIX/bin/manjaro
+```
+
+---
 ### Install Desktop Environments
 
 In Manjaro, run this commands
