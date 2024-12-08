@@ -95,7 +95,7 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 
 - Add Username
 ```
-adduser <username>
+useradd <username>
 ```
 ```
 passwd <username>
@@ -121,7 +121,7 @@ exit
 
 - Remove Username
 ```
-deluser <username>
+userdel <username>
 ```
 
 ---
