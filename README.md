@@ -90,3 +90,26 @@ pacman -S lxqt xscreensaver firefox pulseaudio dbus
 pacman -S plasma kio-extras firefox pulseaudio dbus
 ```
 </details>
+
+---
+Feature
+- [x] Fixed Sound Output
+- [x] Access to Sdcard
+- [x] Access to Termux-x11
+- [x] Add New Username     | [Click Here >](https://github.com/wahasa/Manjaro/blob/main/Patch/AddUser.md#add-username-on-fedora)
+- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Manjaro/blob/main/Apps/Firefoxfix.md#fixed-firefox-on-fedora)
+- [x] Install Applications | [Click Here >](https://github.com/wahasa/Manjaro/tree/main/Apps#list-applications)
+
+Visit problems now in : [Issues](https://github.com/wahasa/Manjaro/issues)
+
+---
+### Run Desktop Environments
+- [x] With Termux-X11  | [Click Here >](https://github.com/wahasa/Manjaro/blob/main/Patch/Termux-X11.md#termux-x11-on-fedora)
+- [x] With Rvnc Viewer | [Click Here >](https://github.com/wahasa/Manjaro/blob/main/Patch/RvncViewer.md#rvnc-viewer-on-fedora)
+- [x] With Bvnc Viewer | [Click Here >](https://github.com/wahasa/Manjaro/blob/main/Patch/BvncViewer.md#bvnc-viewer-on-fedora)
+</br>
+
+---
+<p align="center">Good Luck</p>
+
+---
