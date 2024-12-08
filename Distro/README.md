@@ -1,20 +1,18 @@
 <p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
-### Manjaro on Termux Android
-<img src="https://raw.githubusercontent.com/wahasa/Manjaro/refs/heads/main/Distro/Manjaro-Distro.jpg">
+### Manjaro Distro on Termux Android
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Distro/Fedora-Distro.jpg">
 
----
-• Install Apps on Android
+* Install Apps on Android
 - [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
-- [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
-- [x] [Termux X11](https://github.com/termux/termux-x11/releases)
+- [x] [Termux-x11](https://github.com/termux/termux-x11/releases)
 
-## Installation
+### Installation
 Copy and paste this commands to Termux
 
-#### Install Manjaro (Distro)
+- [x] Install Manjaro (Distro)
 > apt update
 
 ```
@@ -37,79 +35,52 @@ apt install proot-distro -y ; proot-distro install manjaro
 > pacman -Ss (pkg) : Search package.</br>
 > pacman -S (pkg) : Install package.</br>
 > pacman -R (pkg) : Delete package.</br>
-> pacman -h : Help all commands.
 
 ---
-<details><summary><b><code>Add Username</code></b></summary></br>
-
-In Manjaro, run this commands
-```
-pacman -S sudo
-```
-* Add Username
-```
-useradd <username>
-```
-```
-passwd <username>
-```
-```
-echo "<username>    ALL=(ALL)       ALL" >> /etc/sudoers
-```
-```
-su <username>
-```
-
-* Del Username
-```
-userdel <username>
-```
-
-</br>
-Note :</br>
-(username) : Replace with your username.
-
----
-</details>
+Feature
 
 <details><summary><b><code>Fixed Sound Output</code></b></summary></br>
 
-* In Termux, run this commands
+<b>In Termux, run this commands</b>
 > apt update
 
+- Edit Script
 ```
 apt install pulseaudio nano -y
 ```
 ```
-nano $PREFIX/bin/manjaro
+nano $PREFIX/bin/fedora
 ```
 
-Copy Script
+- Copy Script
 ```
 #!/bin/bash
 pulseaudio --start \
     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
     --exit-idle-time=-1
-proot-distro login manjaro --shared-tmp
+proot-distro login fedora --shared-tmp
 ```
 Save : ctrl + x, click y enter.
 
+- Activate script
 ```
 chmod +x $PREFIX/bin/manjaro
 ```
 
 ---
-<b>Login Manjaro</b>
+- Login Manjaro
 > manjaro
 
-<b>Logout Manjaro</b>
+- Logout Manjaro
 > exit
 
+- Remove Manjaro
+```
+rm $PREFIX/bin/fedora ; pd remove fedora
+```
+
 ---
-* In Manjaro,run this commands
-```
-cp /etc/skel/.bashrc .
-```
+<b>In Linux, run this command</b>
 ```
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
@@ -117,223 +88,82 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ---
 </details>
 
-<details><summary><code><b>Install Desktop Mnjaro</b></code></summary></br>
+<details><summary><b><code>Add New Username</code></b></summary></br>
 
-In Manjaro, run this commands
+<b>In Linux, run this commands</b>
+> pacman -S sudo
+
+- Add Username
 ```
-pacman-key --init ; pacman-key --populate ; pacman -Syu --noconfirm
+adduser <username>
+```
+```
+passwd <username>
+```
+```
+echo "<username>    ALL=(ALL)       ALL" >> /etc/sudoers
 ```
 
-- Xfce Desktop
+</br>
+Note :</br>
+(username) : Replace with your username.
+
+---
+- Login Username
 ```
-pacman -S xfce4 xfce4-goodies gst-libav firefox
+su <username>
 ```
-- Lxde Desktop
+
+- Logout Username
 ```
-pacman -S lxde firefox ; mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
+exit
 ```
-- Lxqt Desktop
+
+- Remove Username
 ```
-pacman -S lxqt firefox
-```
-- Kde- Desktop
-```
-pacman -S plasma firefox
-```
-- Mate Desktop
-```
-pacman -S mate mate-extra firefox
+deluser <username>
 ```
 
 ---
+<b>In Termux, run this commands</b>
+> pacman -S nano
+
+- Edit Script
+```
+nano $PREFIX/bin/manjaro
+```
+</br>
+
+> proot-distro login manjaro --shared-tmp
+
+To
+
+```
+proot-distro login --user <username> manjaro --shared-tmp
+```
+Save : ctrl + x, click y enter.
+
+</br>
+Note :</br>
+(username) : Replace with your username.
+
+---
+- Login Manjaro
+> manjaro
+
+- Logout Manjaro
+> exit
+
+- Remove Manjaro
+```
+rm $PREFIX/bin/manjaro ; pd remove manjaro
+```
 </details>
 
-<details><summary><code><b>Install Applications</b></code></summary></br>
-
-In Manjaro, run this command
-> pacman -Syu
-
-- Blender
-```
-pacman -S blender
-```
-- Firefox
-```
-pacman -S firefox
-```
-- Gedit
-```
-pacman -S gedit
-```
-- GIMP
-```
-pacman -S gimp
-```
-- Inkscape
-```
-pacman -S inkscape
-```
-- Kdenlive
-```
-pacman -S kdenlive
-```
-- Krita
-```
-pacman -S krita
-```
-- Lollypop
-```
-pacman -S lollypop
-```
-- Thunderbird
-```
-pacman -S thunderbird
-```
-- Vim
-```
-pacman -S vim
-```
-
 ---
-</details>
+- [x] [Install Desktop Environments](https://github.com/wahasa/Manjaro/tree/main#install-desktop-environments)
 
-<details><summary><code><b>Run VNC Viewer Android</b></code></summary></br>
-
-* In Termux, run this command
-> apt update
-
-```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Note/main/tigervnc ; chmod +x tigervnc ; ./tigervnc
-```
-
-* Start VNC Server
-
-In Session 1 (termux), run this command
-```
-vncstart
-```
-
----
-Add new session</br>
-Swipe the screen from left to right in termux, click 'New Session'.
-
----
-In Session 2 (manjaro), run this commands
-```
-export DISPLAY=:1
-```
-
----
-XFCE Desktop
-```
-startxfce4
-```
-LXDE Desktop
-```
-startlxde
-```
-LXQT Desktop
-```
-startlxqt
-```
-KDE- Desktop
-```
-startplasma-x11
-```
-MATE Desktop
-```
-mate-session
-```
-
----
-* Open Vnc Viewer
-
-Add (+) VNC Client to connect, fill with :
-
-Address
-> localhost:1 
-
-Name
-> Desktop
-
-To disconnect VNC Client, click (X) on the right.
-
----
-* Stop VNC Server
-
-In Session 2 (manjaro), run this command
-> Click Ctrl+c, enter (2X) 
-
-In Session 1 (termux), run this command
-> vncstop
-
----
-</details>
-
-<details><summary><code><b>Run Termux-x11 Android</b></code></summary></br>
-
-* Install App Termux-x11
-
-- [x] [Link Download](https://github.com/termux/termux-x11/releases)
-
-* In Termux, run this command
-> apt update
-
-```
-apt install termux-x11-nightly -y
-```
-
----
-* Start Termux-X11
-
-In Session 1 (termux), run this command
-```
-termux-x11 :1
-```
-
----
-Add new session</br>
-Swipe the screen from left to right in termux, click 'New Session'.
-
----
-In Session 2 (manjaro), run this commands
-```
-export DISPLAY=:1
-```
-
----
-XFCE Desktop
-```
-startxfce4
-```
-LXDE Desktop
-```
-startlxde
-```
-LXQT Desktop
-```
-startlxqt
-```
-KDE- Desktop
-```
-startplasma-x11
-```
-MATE Desktop
-```
-mate-session
-```
-
----
-* Stop Termux-X11
-
-Close app termux-x11
-
-In session 2 (manjaro), run this command
-> Click Ctrl+c, enter (2X)
-
-In session 1 (termux), run this command
-> pkill -f com.termux.x11
-</details>
+- [x] [Run Desktop Environments](https://github.com/wahasa/Manjaro/tree/main#run-desktop-environments)
 </br>
 
 ---
