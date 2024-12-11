@@ -4,7 +4,7 @@ pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
 manjaro=2024
-build=20241202
+build=20241209
 neofetch --ascii_distro Manjaro -L
 folder=manjaro-fs
 if [ -d "$folder" ]; then
