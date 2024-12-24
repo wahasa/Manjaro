@@ -3,8 +3,8 @@ pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
-manjaro=2024
-build=20241216
+manjaro=20241223
+build=rolling
 neofetch --ascii_distro Manjaro -L
 folder=manjaro-fs
 if [ -d "$folder" ]; then
@@ -27,7 +27,7 @@ if [ "$first" != 1 ];then
                *)
                        echo "Unknown Architecture."; exit 1 ;;
                esac
-	       wget -q --show-progress "https://github.com/manjaro-arm/rootfs/releases/download/${build}/Manjaro-ARM-${archurl}-latest.tar.gz" -O $tarball
+	       wget -q --show-progress "https://github.com/manjaro-arm/rootfs/releases/download/${manjaro}/Manjaro-ARM-${archurl}-latest.tar.gz" -O $tarball
 	 fi
          mkdir -p $folder
 	 mkdir -p $folder/binds
