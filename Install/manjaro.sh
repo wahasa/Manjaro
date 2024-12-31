@@ -3,7 +3,7 @@ pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
-manjaro=20241223
+manjaro=20241230
 build=rolling
 neofetch --ascii_distro Manjaro -L
 folder=manjaro-fs
@@ -32,7 +32,7 @@ if [ "$first" != 1 ];then
          mkdir -p $folder
 	 mkdir -p $folder/binds
          echo "Decompressing Rootfs, please be patient."
-         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
+         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev' ||:
     fi
     echo ""
     echo "localhost" > $folder/etc/hostname
